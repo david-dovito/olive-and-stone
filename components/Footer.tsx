@@ -54,6 +54,10 @@ export default function Footer() {
         <div className="border-t border-charcoal-light pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-stone-dark">
             &copy; {new Date().getFullYear()} Olive + Stone Interior Styling. All rights reserved.
+            {" "}&middot;{" "}
+            <Link href="/privacy-policy" className="hover:text-cream transition-colors">
+              Privacy Policy
+            </Link>
           </p>
           <p className="text-xs text-stone-dark">
             Website by{" "}
