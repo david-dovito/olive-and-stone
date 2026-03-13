@@ -46,8 +46,7 @@ export default function About() {
                 name: "Kara Rosen",
                 title: "Co-Founder",
                 email: "Kara@oliveandstoneinterior.com",
-                image:
-                  "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80",
+                image: "/images/kara-rosen.png",
               },
               {
                 name: "Fredricka Coleman",
