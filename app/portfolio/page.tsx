@@ -25,7 +25,7 @@ const projects = [
     title: "Mountain View Rental",
     category: "Airbnb Styling",
     image:
-      "https://images.unsplash.com/photo-1616137466211-f736a1f05b98?w=800&q=80",
+      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80",
   },
   {
     title: "Family Living Room",
@@ -62,19 +62,26 @@ const projects = [
 export default function Portfolio() {
   return (
     <>
-      {/* Header */}
-      <section className="pt-32 pb-16 px-6 lg:px-12 bg-cream">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-olive mb-4">
+      {/* Hero */}
+      <section className="relative h-[50vh] min-h-[400px] flex items-end">
+        <Image
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80"
+          alt="Styled interior space"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/20 to-transparent" />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-6 lg:px-12 pb-16">
+          <p className="text-xs tracking-widest uppercase text-olive-light mb-4">
             Our Work
           </p>
-          <h1 className="font-display text-4xl md:text-6xl text-charcoal mb-6">
+          <h1 className="font-display text-4xl md:text-6xl text-cream mb-4">
             Portfolio
           </h1>
-          <p className="text-charcoal-light max-w-xl text-lg">
-            A look at spaces we've styled across Northern Colorado. Each project
-            starts with listening and ends with a space that feels like it was
-            always meant to look this way.
+          <p className="text-cream/80 max-w-lg text-lg font-light">
+            Spaces we've styled across Northern Colorado, each one as
+            unique as the people who live in them.
           </p>
         </div>
       </section>

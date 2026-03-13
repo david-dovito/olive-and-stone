@@ -31,8 +31,60 @@ export default function About() {
         </div>
       </section>
 
+      {/* Team */}
+      <section className="py-24 md:py-32 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-xs tracking-widest uppercase text-olive mb-4 text-center">
+            Meet the Team
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl text-charcoal mb-16 text-center">
+            The people behind the spaces
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {[
+              {
+                name: "Kara Rosen",
+                title: "Co-Founder",
+                email: "Kara@oliveandstoneinterior.com",
+                image:
+                  "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80",
+              },
+              {
+                name: "Fredricka Coleman",
+                title: "Co-Founder",
+                email: "Fredricka@oliveandstoneinterior.com",
+                image: "/images/fredricka-coleman.jpg",
+              },
+            ].map((member) => (
+              <div key={member.name} className="group text-center">
+                <div className="relative w-64 h-80 mx-auto mb-6 overflow-hidden">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover object-top grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
+                  />
+                </div>
+                <h3 className="font-display text-2xl text-charcoal mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-sm tracking-widest uppercase text-olive mb-3">
+                  {member.title}
+                </p>
+                <a
+                  href={`mailto:${member.email}`}
+                  className="text-sm text-charcoal-light hover:text-olive transition-colors"
+                >
+                  {member.email}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Story */}
-      <section className="py-24 px-6 lg:px-12">
+      <section className="py-24 px-6 lg:px-12 bg-cream">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-display text-3xl md:text-4xl text-charcoal mb-8 leading-tight">
@@ -43,19 +95,29 @@ export default function About() {
                 With over 20 years in home design, we've learned that the best
                 spaces start with listening. Before we move a single piece of
                 furniture, we take the time to understand the people who use the
-                space and how they want it to feel.
+                space and how they want it to feel, making sure the style
+                reflects their personality and vision, not just ours.
               </p>
               <p>
                 We specialize in starting with what you already have, finding
-                ways to repurpose and rearrange before we begin shopping. The
-                result is a space that feels fresh, intentional, and unmistakably
-                yours.
+                ways to repurpose and rearrange before we begin shopping.
+                Sometimes that means working with what our clients already own
+                and rearranging things in a way that makes the space feel fresh
+                again. Other times it means bringing in a few new pieces to
+                help everything come together.
               </p>
               <p>
-                Whether we're styling a family home, refreshing a business
-                lobby, or preparing an Airbnb listing that photographs
-                beautifully, our approach is always the same: collaborative,
-                thoughtful, and personal.
+                We also love working with Airbnb hosts who want their spaces to
+                stand out and create a great first impression for guests. We
+                style homes so they photograph beautifully, refresh photos that
+                may feel dated, and help update listing descriptions so they
+                better capture the feel of the space.
+              </p>
+              <p>
+                At the heart of it, we love helping people see the potential in
+                a space, whether it's bringing together something that feels
+                unfinished or styling a space that's starting out as a blank
+                slate.
               </p>
             </div>
           </div>
@@ -71,7 +133,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="bg-cream py-24 px-6 lg:px-12">
+      <section className="py-24 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <p className="text-xs tracking-widest uppercase text-olive mb-4 text-center">
             How We Work
@@ -86,19 +148,20 @@ export default function About() {
                 We Listen First
               </h3>
               <p className="text-charcoal-light text-sm leading-relaxed">
-                Every project begins with understanding your vision, your style,
-                and how you live in your space. The design reflects you, not us.
+                Every space reflects your style and vision. We take the time to
+                understand the people who use the space, making sure everything
+                feels comfortable, inviting, and personal.
               </p>
             </div>
             <div className="text-center">
               <div className="w-px h-12 bg-olive mx-auto mb-6" />
               <h3 className="font-display text-xl text-charcoal mb-4">
-                Start With What You Have
+                Full-Service Styling
               </h3>
               <p className="text-charcoal-light text-sm leading-relaxed">
-                We repurpose and reimagine your existing pieces before
-                introducing anything new. It's more sustainable, more personal,
-                and often more beautiful.
+                Homes, businesses, and Airbnb listings - polished,
+                photographed, and ready to shine. We handle everything from
+                restyling to photography and listing descriptions.
               </p>
             </div>
             <div className="text-center">
@@ -107,35 +170,54 @@ export default function About() {
                 Stress-Free Process
               </h3>
               <p className="text-charcoal-light text-sm leading-relaxed">
-                Hands-on, adaptable, and approachable every step of the way. We
-                make the process enjoyable, not overwhelming.
+                Hands-on, adaptable, and approachable every step of the way.
+                We're friendly, reliable, and easy to collaborate with,
+                delivering results that feel personal and polished.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Serving */}
-      <section className="py-24 px-6 lg:px-12">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xs tracking-widest uppercase text-olive mb-6">
-            Northern Colorado
-          </p>
-          <h2 className="font-display text-3xl md:text-4xl text-charcoal mb-8">
-            Proudly serving Windsor and the surrounding communities
-          </h2>
-          <p className="text-charcoal-light leading-relaxed mb-10">
-            From Fort Collins to Loveland and everywhere in between, we bring
-            our styling expertise directly to you. Homeowners, Airbnb hosts,
-            businesses, builders, and property managers trust us to create
-            spaces that are polished, warm, and welcoming.
-          </p>
-          <Link
-            href="/connect"
-            className="inline-block bg-olive text-cream px-10 py-4 text-sm tracking-widest uppercase hover:bg-olive-dark transition-colors"
-          >
-            Start a Conversation
-          </Link>
+      {/* Who We Serve */}
+      <section className="py-24 px-6 lg:px-12 bg-cream">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-xs tracking-widest uppercase text-olive mb-4">
+                Who We Serve
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl text-charcoal mb-8">
+                Northern Colorado, from Windsor to Fort Collins and beyond
+              </h2>
+              <p className="text-charcoal-light leading-relaxed mb-6">
+                We work with homeowners, Airbnb hosts, businesses, corporate
+                clients, general contractors, and property managers throughout
+                Northern Colorado. Whether you're in a new build or an
+                established neighborhood, we bring our styling expertise
+                directly to you.
+              </p>
+              <p className="text-charcoal-light leading-relaxed mb-10">
+                Our clients value attention to detail, consistent quality, and a
+                team they can trust. They want spaces that look polished, feel
+                personal, and are comfortable and inviting.
+              </p>
+              <Link
+                href="/connect"
+                className="inline-block bg-olive text-cream px-10 py-4 text-sm tracking-widest uppercase hover:bg-olive-dark transition-colors"
+              >
+                Start a Conversation
+              </Link>
+            </div>
+            <div className="relative h-[400px]">
+              <Image
+                src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80"
+                alt="Styled living space in Northern Colorado"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>

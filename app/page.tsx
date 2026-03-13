@@ -5,31 +5,38 @@ const services = [
   {
     title: "Home Styling",
     description:
-      "We work with what you have, rearranging and refreshing your space before bringing in anything new.",
+      "From a single room to your whole home, we work with what you have first, repurposing and rearranging before bringing in anything new. The result feels fresh, personal, and unmistakably yours.",
     image:
       "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
   },
   {
-    title: "Room Refresh",
+    title: "Airbnb & Short-Term Rentals",
     description:
-      "A single room can change the feel of your entire home. Let us help you see its potential.",
+      "We go beyond styling. We help your space photograph beautifully, refresh listing photos that feel dated, and update descriptions so your property truly stands out and books.",
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
+      "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=800&q=80",
   },
   {
-    title: "Airbnb & Rentals",
+    title: "Business & Commercial",
     description:
-      "Stand out from the listing. We style, photograph, and help craft descriptions that book.",
+      "Create a space that reflects your brand and impresses every client who walks in. We style offices, lobbies, and retail spaces with the same attention to detail we bring to homes.",
     image:
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=800&q=80",
+  },
+  {
+    title: "Staging & New Builds",
+    description:
+      "For real estate companies, builders, and property managers who need spaces that show beautifully and sell. We create that polished, move-in-ready feeling buyers respond to.",
+    image:
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
   },
 ];
 
 const portfolioImages = [
-  "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
-  "https://images.unsplash.com/photo-1616137466211-f736a1f05b98?w=600&q=80",
-  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
+  "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80",
+  "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80",
+  "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80",
+  "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=600&q=80",
 ];
 
 export default function Home() {
@@ -38,13 +45,13 @@ export default function Home() {
       {/* Hero */}
       <section className="relative h-[90vh] flex items-center justify-center">
         <Image
-          src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80"
           alt="Beautifully styled living room"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-charcoal/30" />
+        <div className="absolute inset-0 bg-charcoal/40" />
         <div className="relative z-10 text-center text-cream px-6">
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-light mb-6 tracking-wide">
             Olive <span className="text-olive-light">+</span> Stone
@@ -71,10 +78,13 @@ export default function Home() {
             We help you see the potential in your space
           </h2>
           <p className="text-charcoal-light leading-relaxed text-lg">
-            Whether it's bringing together something that feels unfinished or
-            styling a space from a blank slate, we combine professional design
-            knowledge with over 20 years of hands-on experience to create rooms
-            that feel like you.
+            Whether you're finishing a room that never quite came together or
+            starting fresh with a blank slate, we combine professional design
+            knowledge with over 20 years of hands-on experience to create
+            spaces that feel warm, welcoming, and thoughtfully put together.
+            We take the time to understand how you use your space and how you
+            want it to feel, making sure the style reflects your personality
+            and vision.
           </p>
         </div>
       </section>
@@ -88,7 +98,7 @@ export default function Home() {
           <h2 className="font-display text-3xl md:text-4xl text-charcoal mb-16 text-center">
             Our Services
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {services.map((service) => (
               <div key={service.title} className="group">
                 <div className="relative h-80 mb-6 overflow-hidden">

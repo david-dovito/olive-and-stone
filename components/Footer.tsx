@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <p className="text-xs tracking-widest uppercase text-stone-dark mb-4">Navigate</p>
             <ul className="space-y-2">
-              {["About", "Portfolio", "Testimonials", "Connect"].map((item) => (
+              {["About", "Portfolio", "Connect"].map((item) => (
                 <li key={item}>
                   <Link
                     href={`/${item.toLowerCase()}`}
@@ -35,12 +35,18 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <p className="text-xs tracking-widest uppercase text-stone-dark mb-4">Get in Touch</p>
-            <p className="text-sm text-stone mb-2">Windsor, Colorado</p>
+            <p className="text-sm text-stone mb-3">Windsor, Colorado</p>
             <a
               href="mailto:Kara@oliveandstoneinterior.com"
-              className="text-sm text-olive-light hover:text-cream transition-colors"
+              className="block text-sm text-olive-light hover:text-cream transition-colors"
             >
               Kara@oliveandstoneinterior.com
+            </a>
+            <a
+              href="mailto:Fredricka@oliveandstoneinterior.com"
+              className="block text-sm text-olive-light hover:text-cream transition-colors mt-1"
+            >
+              Fredricka@oliveandstoneinterior.com
             </a>
           </div>
         </div>

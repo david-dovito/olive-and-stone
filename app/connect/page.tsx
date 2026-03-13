@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import type { Metadata } from "next";
 
@@ -10,18 +11,26 @@ export const metadata: Metadata = {
 export default function Connect() {
   return (
     <>
-      {/* Header */}
-      <section className="pt-32 pb-16 px-6 lg:px-12 bg-cream">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-olive mb-4">
+      {/* Hero */}
+      <section className="relative h-[50vh] min-h-[400px] flex items-end">
+        <Image
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+          alt="Beautifully designed home"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/20 to-transparent" />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-6 lg:px-12 pb-16">
+          <p className="text-xs tracking-widest uppercase text-olive-light mb-4">
             Let's Talk
           </p>
-          <h1 className="font-display text-4xl md:text-6xl text-charcoal mb-6">
+          <h1 className="font-display text-4xl md:text-6xl text-cream mb-4">
             Connect
           </h1>
-          <p className="text-charcoal-light max-w-xl text-lg">
-            Whether it's a single room or your entire home, we'd love to hear
-            about your space. Reach out and let's start the conversation.
+          <p className="text-cream/80 max-w-lg text-lg font-light">
+            Whether it's a single room or your entire home, we'd love to
+            hear about your space.
           </p>
         </div>
       </section>
@@ -49,9 +58,15 @@ export default function Connect() {
                 </p>
                 <a
                   href="mailto:Kara@oliveandstoneinterior.com"
-                  className="text-charcoal hover:text-olive transition-colors"
+                  className="block text-charcoal hover:text-olive transition-colors"
                 >
                   Kara@oliveandstoneinterior.com
+                </a>
+                <a
+                  href="mailto:Fredricka@oliveandstoneinterior.com"
+                  className="block text-charcoal hover:text-olive transition-colors mt-1"
+                >
+                  Fredricka@oliveandstoneinterior.com
                 </a>
               </div>
 
