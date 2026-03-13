@@ -155,6 +155,27 @@ export default function TermsOfService() {
               information with our SMS service provider solely for the purpose
               of delivering messages on our behalf.
             </p>
+
+            <h3 className="text-charcoal font-medium mt-6 mb-2">
+              Carrier Liability Disclaimer
+            </h3>
+            <p>
+              Olive + Stone is not liable for delayed or undelivered messages.
+              Carriers are not responsible for the content of any messages sent
+              via SMS. Message delivery is subject to effective transmission by
+              your mobile carrier and device compatibility. Olive + Stone makes
+              no guarantee that messages will be delivered by any specific
+              wireless carrier.
+            </p>
+
+            <h3 className="text-charcoal font-medium mt-6 mb-2">
+              Age Restriction
+            </h3>
+            <p>
+              You must be at least 18 years of age to opt in to our SMS
+              messaging program. By consenting to receive SMS messages from
+              Olive + Stone, you confirm that you are 18 years of age or older.
+            </p>
           </div>
 
           {/* Intellectual Property */}

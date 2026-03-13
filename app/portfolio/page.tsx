@@ -49,13 +49,13 @@ const projects = [
     title: "Open Concept Kitchen",
     category: "Home Styling",
     image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
   },
   {
     title: "Master Bedroom Suite",
     category: "Room Refresh",
     image:
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
   },
 ];
 

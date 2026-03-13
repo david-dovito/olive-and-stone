@@ -21,14 +21,14 @@ const services = [
     description:
       "Create a space that reflects your brand and impresses every client who walks in. We style offices, lobbies, and retail spaces with the same attention to detail we bring to homes.",
     image:
-      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
   },
   {
     title: "Staging & New Builds",
     description:
       "For real estate companies, builders, and property managers who need spaces that show beautifully and sell. We create that polished, move-in-ready feeling buyers respond to.",
     image:
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=800&q=80",
   },
 ];
 
