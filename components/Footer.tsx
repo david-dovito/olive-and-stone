@@ -58,6 +58,10 @@ export default function Footer() {
             <Link href="/privacy-policy" className="hover:text-cream transition-colors">
               Privacy Policy
             </Link>
+            {" "}&middot;{" "}
+            <Link href="/terms-of-service" className="hover:text-cream transition-colors">
+              Terms of Service
+            </Link>
           </p>
           <p className="text-xs text-stone-dark">
             Website by{" "}

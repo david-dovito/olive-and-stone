@@ -158,6 +158,16 @@ export default function PrivacyPolicy() {
               reply HELP to any text message or contact us at
               Kara@oliveandstoneinterior.com.
             </p>
+            <p className="mt-4">
+              <span className="text-charcoal font-medium">No sharing of SMS consent</span> -
+              your SMS consent and phone number will not be shared with or sold
+              to third parties for their marketing purposes, except as required
+              by our SMS service provider to deliver messages on our behalf.
+            </p>
+            <p className="mt-4">
+              SMS consent is not a condition of purchasing any service from
+              Olive + Stone.
+            </p>
           </div>
 
           {/* Information Sharing */}
